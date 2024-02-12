@@ -55,6 +55,7 @@ const createGrid = () => {
   createTiles(columns * rows);
 }
 
+toggle();
 createGrid();
 
 window.onresize = () => createGrid();
