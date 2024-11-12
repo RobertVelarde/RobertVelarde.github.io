@@ -13,3 +13,9 @@ body {
 #mapId {
   flex-grow: 1;
 }
+
+.leaflet-control.switch-tiles-control {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
