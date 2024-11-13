@@ -1,0 +1,21 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#mapId {
+  flex-grow: 1;
+}
+
+.leaflet-control.switch-tiles-control {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
