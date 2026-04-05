@@ -107,7 +107,7 @@ const siteData = {
         "suncalc",
       ],
       github: "https://github.com/RobertVelarde/Zenith",
-      liveUrl: null,
+      liveUrl: "https://zenith.robertvelardejr.com",
     },
     {
       id: "driving-camera",
