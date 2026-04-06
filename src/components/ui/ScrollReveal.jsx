@@ -25,8 +25,8 @@ export default function ScrollReveal({ children, delay = 0, className = '' }) {
   return (
     <div
       ref={ref}
-      className={`${className} transition-none ${
-        visible ? 'animate-fade-up' : 'opacity-0 translate-y-6'
+      className={`${className} transition-none opacity-0 translate-y-6 ${
+        visible ? 'animate-fade-up' : ''
       }`}
       style={visible ? { animationDelay: `${delay}ms` } : undefined}
     >
