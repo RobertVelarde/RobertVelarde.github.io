@@ -110,6 +110,19 @@ const siteData = {
       liveUrl: "https://zenith.robertvelardejr.com",
     },
     {
+      id: "delta-v",
+      title: "Delta-V",
+      subtitle: "KSP Interplanetary Mission Planner",
+      featured: true,
+      description:
+        "An interactive delta-v map for Kerbal Space Program's Kerbol system. Click any two nodes on the orbital graph — from a planet's surface to low orbit, elliptical orbit, SOI intercept, and beyond — and Dijkstra's algorithm computes the optimal transfer route with a full leg-by-leg delta-v breakdown. The map renders as a pannable, zoomable SVG with a CRT aesthetic: scanlines, vignette, and chromatic aberration applied via layered SVG filters.",
+      challenge:
+        "The primary challenge was modeling the delta-v graph accurately and efficiently. Each celestial body exposes up to four orbital nodes (surface, low orbit, elliptical orbit, SOI intercept), connected by weighted edges sourced from the KSP delta-v subway map. Dijkstra's algorithm runs over this graph to find the minimum-cost path, with aerobraking edges handled as optional cost reductions. On the rendering side, Hohmann transfer arcs are clipped per-body using SVG clipPath regions so arcs terminate cleanly at orbital ring boundaries. A deterministic LCG starfield and a fixed-seed layout engine ensure the map is pixel-identical across renders without external state.",
+      techStack: ["React 19", "Vite", "D3", "Tailwind CSS"],
+      github: "https://github.com/RobertVelarde/DeltaV",
+      liveUrl: "https://deltav.robertvelardejr.com",
+    },
+    {
       id: "driving-camera",
       title: "Better Driving Camera",
       subtitle: "Project Zomboid Mod",
